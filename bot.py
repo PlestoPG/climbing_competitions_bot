@@ -159,6 +159,8 @@ class Bot(TeleBot):
         self.register_callback_query_handler(self.mark_lesson, lambda call: call.data == 'mark_lesson')
         self.register_callback_query_handler(self.send_invite, lambda call: call.data == 'invite')
         self.register_callback_query_handler(self.table_link, lambda call: call.data == 'export')
+        print('Become eternal judge using next link:')
+        print(f't.me/{self.get_me().username}?start={getenv('SECRET_PHRASE')}')
         print('Polling started')
         super().infinity_polling()
 

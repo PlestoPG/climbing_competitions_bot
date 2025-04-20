@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b0be43f-bc45-42e3-a999-81743dfaff88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="5b0be43f-bc45-42e3-a999-81743dfaff88" name="Changes" comment="install fix">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,12 +104,25 @@
       <workItem from="1745006345761" duration="974000" />
       <workItem from="1745084849350" duration="14641000" />
       <workItem from="1745133263754" duration="2340000" />
-      <workItem from="1745136195715" duration="77000" />
+      <workItem from="1745136195715" duration="1591000" />
     </task>
+    <task id="LOCAL-00001" summary="install fix">
+      <option name="closed" value="true" />
+      <created>1745136543429</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745136543429</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="install fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="install fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
