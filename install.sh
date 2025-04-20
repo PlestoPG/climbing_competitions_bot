@@ -37,11 +37,11 @@ EOF
 }
 
 main() {
-  python3 -m venv .venv
+  python3 -m venv .venv || return 1
   echo "info: setup Python virtual environment"
-  source "$CWD"/.venv/bin/activate
+  source "$CWD"/.venv/bin/activate || return 1
   echo "info: activated virtual environment"
-  pip install -r requirements.txt
+  pip install -r requirements.txt || return 1
   echo "info: installed requirements"
   check_if_running_as_root || return 1
   init_daemon

@@ -1,0 +1,1 @@
+Clone repository and run `sh install.sh` as root 
