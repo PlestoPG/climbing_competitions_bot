@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b0be43f-bc45-42e3-a999-81743dfaff88" name="Changes" comment="install fix">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="5b0be43f-bc45-42e3-a999-81743dfaff88" name="Changes" comment="expanded installation instruction">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google_docs.py" beforeDir="false" afterPath="$PROJECT_DIR$/google_docs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <workItem from="1745006345761" duration="974000" />
       <workItem from="1745084849350" duration="14641000" />
       <workItem from="1745133263754" duration="2340000" />
-      <workItem from="1745136195715" duration="1591000" />
+      <workItem from="1745136195715" duration="3109000" />
     </task>
     <task id="LOCAL-00001" summary="install fix">
       <option name="closed" value="true" />
@@ -114,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745136543429</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="expanded installation instruction">
+      <option name="closed" value="true" />
+      <created>1745137833372</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745137833372</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +129,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="install fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="install fix" />
+    <MESSAGE value="expanded installation instruction" />
+    <option name="LAST_COMMIT_MESSAGE" value="expanded installation instruction" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -136,7 +144,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/climbing_bot$main.coverage" NAME="main Coverage Results" MODIFIED="1745135713458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/climbing_bot$main.coverage" NAME="main Coverage Results" MODIFIED="1745139691481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/climbing_bot$google_docs.coverage" NAME="google_docs Coverage Results" MODIFIED="1745095837936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

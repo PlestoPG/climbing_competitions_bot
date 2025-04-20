@@ -3,10 +3,11 @@ from gspread import Cell
 from google.oauth2.service_account import Credentials
 from asyncio import run, sleep
 import pandas as pd
+from os import path
 
 
 def get_creds():
-    creds = Credentials.from_service_account_file("./service_credentials.json")
+    creds = Credentials.from_service_account_file(f"{path.dirname(path.abspath(__file__))}/service_credentials.json")
     scoped = creds.with_scopes([
         "https://spreadsheets.google.com/feeds",
         "https://www.googleapis.com/auth/spreadsheets",

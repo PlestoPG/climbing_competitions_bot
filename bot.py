@@ -148,9 +148,9 @@ class Bot(TeleBot):
         super().register_next_step_handler_by_chat_id(chat_id, next_step, arguments)
 
     def infinity_polling(self, *args, **kwargs):
-        self.enable_save_next_step_handlers(4, './handlers.save')
-        if path.exists('./handlers.save'):
-            self.load_next_step_handlers('./handlers.save', True)
+        self.enable_save_next_step_handlers(4, f'{path.dirname(path.abspath(__file__))}/handlers.save')
+        if path.exists(f'{path.dirname(path.abspath(__file__))}/handlers.save'):
+            self.load_next_step_handlers(f'{path.dirname(path.abspath(__file__))}/handlers.save', True)
         self.load_next_step_handlers()
         self.register_callback_query_handler(self.delete_called_message, lambda call: call.data == 'delete')
         self.register_callback_query_handler(self.menu, lambda call: call.data in ['start', 'menu'])
@@ -160,7 +160,7 @@ class Bot(TeleBot):
         self.register_callback_query_handler(self.send_invite, lambda call: call.data == 'invite')
         self.register_callback_query_handler(self.table_link, lambda call: call.data == 'export')
         print('Become eternal judge using next link:')
-        print(f't.me/{self.get_me().username}?start={getenv('SECRET_PHRASE')}')
+        print(f'https://t.me/{self.get_me().username}?start={getenv('SECRET_PHRASE')}')
         print('Polling started')
         super().infinity_polling()
 
@@ -198,7 +198,7 @@ def start_command(message):
             db.commit()
         elif str(getenv("SECRET_PHRASE")) in arguments:
             judges.eternal.append(user_id)
-            dump(judges.eternal, open('eternal_judges.json', 'w'))
+            dump(judges.eternal, open(f'{path.dirname(path.abspath(__file__))}eternal_judges.json', 'w'))
     bot.menu(message)
 
 

@@ -21,7 +21,7 @@ class Database(Connection):
 
 class Judges:
     def __init__(self, db_connection):
-        self.eternal = load(open('eternal_judges.json')) if path.exists('eternal_judges.json') else []
+        self.eternal = load(open(f'{path.dirname(path.abspath(__file__))}/eternal_judges.json')) if path.exists(f'{path.dirname(path.abspath(__file__))}/eternal_judges.json') else []
         users = db_connection.execute("SELECT * FROM judges").fetchall()
         all_judges = [user[1:3] for user in users]
         self.all = dict(all_judges) if all_judges else {}
